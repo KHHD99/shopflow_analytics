@@ -1,0 +1,22 @@
+
+    
+    
+    
+    create or replace table `shopflow_analytics_cat`.`bronze`.`raw_products` (`product_id` string ,`product_name` string ,`category` string ,`price` double )
+    
+    using delta
+  
+    
+    
+    
+    
+    
+  ;
+    -- dbt seed --
+    
+          insert overwrite `shopflow_analytics_cat`.`bronze`.`raw_products` values
+          (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s)
+      
+
+;
+  
