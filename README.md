@@ -1,4 +1,4 @@
-# Job-Ready dbt + Databricks E-Commerce Project [2026]
+# dbt + Databricks E-Commerce Project [2026]
 
 End-to-end data pipeline for an e-commerce analytics layer: **orders**, **customers**, **products**, and **order line items**. Built with dbt on Databricks so you can run it locally or deploy via CI/CD.
 
@@ -139,8 +139,6 @@ If you add a workflow (e.g. `.github/workflows/dbt.yml`) that runs dbt on PRs, u
 | `DATABRICKS_CATALOG`   | Unity Catalog name       |
 
 ## Interview talking points
-
-When asked *"Walk me through a data project you've built"* or *"What's in your dbt project?"*, you can say:
 
 - **Architecture:** "I built a medallion pipeline on Databricks: bronze for raw data, silver for staging and intermediate models, gold for fact and dimension tables. Schema names are clean—no prefix or postfix."
 - **Facts & dimensions:** "Gold has two fact tables—`fct_orders` (order grain) and `fct_order_items` (line grain)—and one dimension, `dim_products`. Customers are in `scd_customers` only (Type 2 SCD, attributes only, no order aggregates)."
