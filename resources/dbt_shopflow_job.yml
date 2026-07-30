@@ -1,7 +1,7 @@
 resources:
   jobs:
     shopflow_dbt_job:
-      name: shopflow_dbt_job
+      name: dbt_dbx_job
       tasks:
         - task_key: run_dbt_job
           dbt_task:
