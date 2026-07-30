@@ -7,7 +7,7 @@ shopflow_analytics:
       http_path: "/sql/1.0/warehouses/233098644a6a2c6f"
       schema: silver
       catalog: shopflow_analytics_cat
-      token: "dapi3bb0721c7d7af2e70f233a4a4756c951"
+      token: "dapiea5f7a4f92a7fe1e85406f0f01ee0f44"
       threads: 4
       connect_timeout: 60
       connect_retries: 3
